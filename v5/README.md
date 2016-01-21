@@ -21,7 +21,7 @@ is compatible with old school JS, this WILL make your application much better.
 
 ##JSX and REACT
 
-Babel has support for JSX and Flow. Check out our React preset to get started. Use it together with the [babel-sublime](https://github.com/babel/babel-sublime) 
+Babel has support for [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html). Use it together with the [babel-sublime](https://github.com/babel/babel-sublime) 
 package to bring syntax highlighting to a whole new level (if sublime is your thing).
 
 ##What changed from v4
