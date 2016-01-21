@@ -19,3 +19,7 @@ static assets representing those modules.
     
 - v2 now instead of just one component, this example uses two and it will show how to require a component from another
     one
+    
+- v3 multiple components and now also css, use a simple loader inline
+
+- v4 intro to webpack configuration file, binding loaders
