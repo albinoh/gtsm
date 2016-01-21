@@ -23,3 +23,5 @@ static assets representing those modules.
 - v3 multiple components and now also css, use a simple loader inline
 
 - v4 intro to webpack configuration file, binding loaders and package.json
+
+- v5 babel!
