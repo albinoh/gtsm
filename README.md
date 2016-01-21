@@ -10,6 +10,7 @@ static assets representing those modules.
 
 - node.js, make sure [node.js](https://nodejs.org/en/) is installed
 - webpack installed globally (this allows to run >webpack from the console)
+    
     >sudo npm install webpack -g 
 
 ##Examples
