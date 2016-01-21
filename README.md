@@ -49,3 +49,7 @@ with any of the versions on this tutorial
 - Of course any other flavor/combination if a web server is already running, for example vertx on a docker machine. Webpack file 
 watcher can be setup to run and mount the build (compiled) directory on the docker vm so any changes will reflect immediately on
 refresh. 
+
+#Bugs/questions/enhancements
+
+Do you want to see something else here? Do you have questions or suggestions, please go [ahead](https://github.com/gabroe/webpackExamples/issues).
