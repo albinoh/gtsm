@@ -1,6 +1,17 @@
 # Webpack example v4
 
-We don’t want to write such long requires _require("!style!css!./style.css")_
+We don’t want to write such long requires _require("!style!css!./style.css")_, but first remember to install the loaders
+this time, we added a new file _package.json_ the file includes the dependencies of our project, this is a npm file very
+standard, see the dependencies section:
+
+      "dependencies": {
+        "css-loader": "^0.23.1",
+        "style-loader": "^0.13.0"
+      }
+
+so now for installing the loaders (and any other dependency) from the v4 directory, just run:
+
+    npm install
 
 We can bind file extensions to loaders so we just need to write: require("./style.css") so lets update the components, 
 specifying the loader can be done on the command line at build time:

@@ -1,0 +1,17 @@
+{
+  "name": "v4",
+  "version": "0.0.1",
+  "author": {
+    "name": "Gabriel Espinola"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gabroe/webpackExamples.git"
+  },
+  "license": "MIT",
+  "description": "v4 webpack example",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0"
+  }
+}
