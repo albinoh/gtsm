@@ -1,9 +1,9 @@
-var stuffs = require('./component2');
-require("./style.css");
+import stuffs from './component2';
+import "./style.css";
 
 document.write('Stuff is coming:<br>');
 
-stuffs.forEach(function (stuff) {
+for(var stuff of stuffs){
     document.write('<span class="stuff">' + stuff + '</span>');
     document.write('<br/>');
-});
+};

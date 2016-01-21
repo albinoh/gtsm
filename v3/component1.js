@@ -1,4 +1,4 @@
-var stuffs = require('./component2')
+var stuffs = require('./component2');
 require("!style!css!./style.css");
 
 document.write('Stuff is coming:<br>');
