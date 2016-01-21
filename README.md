@@ -25,3 +25,26 @@ static assets representing those modules.
 - v4 intro to webpack configuration file, binding loaders and package.json
 
 - v5 babel!
+
+##What is next/missing?
+
+Well, this is just an intro on webpack and how can it be leveraged to package, bundle, resolve and even transpile JS. 
+Of course webpack is just one part of the whole puzzle, but a very important part. A couple of things that are missing
+that can be added on a v6 example (or more):
+
+- Building (and related phases), for this _gulp_ is our choice, gulp will eventually call webpack as one of the build phases
+- Linting, _eslint_ is the way to go here, there is a eslint-loader that will check for syntax at build time
+- Minification and obfuscation, _uglifyjs_ loader can be used here
+- CSS Scripting (SASS, LESS) though respective loaders can be used to transform scss or less files to css
+- Testing, this is a whole subject but webpack can't help here
+
+#Development server
+
+There are some options that we can use to just test our JS code while on dev mode, depending on our infrastructure we can use:
+ 
+- [browsersync](https://www.browsersync.io/), my favorite, very very cool stuff.
+- [webpack dev server](http://webpack.github.io/docs/tutorials/getting-started/#development-server), very basic and ready to use
+with any of the versions on this tutorial
+- Of course any other flavor/combination if a web server is already running, for example vertx on a docker machine. Webpack file 
+watcher can be setup to run and mount the build (compiled) directory on the docker vm so any changes will reflect immediately on
+refresh. 
