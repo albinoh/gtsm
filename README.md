@@ -16,3 +16,6 @@ static assets representing those modules.
 
 - v1 is a very basic webpack hello world, takes one module and creates a simple bundle with it, then a simple html page 
     uses that bundle
+    
+- v2 now instead of just one component, this example uses two and it will show how to require a component from another
+    one
