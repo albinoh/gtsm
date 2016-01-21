@@ -6,7 +6,7 @@ for this run
 
     >npm install css-loader style-loader
     
-- style-loader: Adds some css to the DOM by adding a <style> tag
+- style-loader: Adds some css to the DOM by adding a \<style\> tag
 - css-loader: Bundles all css together on one file
 
 note that this is *not* a global install, so it will create _node_modules_ folder with two modules on it, webpack will look
