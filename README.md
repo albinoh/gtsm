@@ -27,6 +27,8 @@ static assets representing those modules.
 
 - v5 babel!
 
+- v6 ESLINT, Also minification, obfuscation, dedupping and aggressive merging (using webpack plugins)
+
 ##What is next/missing?
 
 Well, this is just an intro on webpack and how can it be leveraged to package, bundle, resolve and even transpile JS. 
@@ -34,8 +36,6 @@ Of course webpack is just one part of the whole puzzle, but a very important par
 that can be added on a v6 example (or more):
 
 - Building (and related phases), for this _gulp_ is our choice, gulp will eventually call webpack as one of the build phases
-- Linting, _eslint_ is the way to go here, there is a eslint-loader that will check for syntax at build time
-- Minification and obfuscation, _uglifyjs_ loader can be used here
 - CSS Scripting (SASS, LESS) though respective loaders can be used to transform scss or less files to css
 - Testing, this is a whole subject but webpack can't help here
 
