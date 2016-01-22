@@ -1,0 +1,6 @@
+{
+  "name": "component2",
+  "description": "this component contains a list of stuffs",
+  "version": "1.0.0",
+  "main": "./component2.js"
+}

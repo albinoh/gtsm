@@ -1,12 +1,11 @@
-# Webpack example v5
+# Webpack example v6
 
 ##Linting
 
 We will use [ESLINT](http://eslint.org/) to lint our code, look at .eslintrc file, most IDE's will support eslint, 
 adding this file to the IDE configuration will help you keep the code clean and with the team standards. For example 
 one thing that is available in JS is having a string to be defined with single quote or double quotes, the eslint config
-file can be setup so the IDE permits only one, for matter of simplicity we will allow only \" double quotes (to match
-JSON [spec](http://www.json.org/))
+file can be setup so the IDE permits only one, for matter of simplicity we will allow only \' single quotes
 
 Now for example look at this version of component2.js
 
@@ -73,7 +72,7 @@ There are several plugins that can be added to webpack config, in this case the 
 Now after running the build you will notice that the _bundle.js_ file is now smaller 4k instead of 12k from v5
 
 ##How to Run
-Navigate to /v5 and on the console (alternatively you can run _run.sh_):
+Navigate to /v6 and on the console (alternatively you can run _run.sh_):
     
     >webpack
 

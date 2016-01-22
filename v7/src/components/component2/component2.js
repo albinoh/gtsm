@@ -1,4 +1,4 @@
-import './style.css';
+//import style from './component2.scss';
 
 const arrayOfStuff = [
   'stuff1',
