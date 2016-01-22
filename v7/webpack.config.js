@@ -1,22 +1,15 @@
 const
+  path = require('path'),
   webpack = require('webpack'),
-  AUTOPREFIXER_BROWSERS = [
-    'Android 2.3',
-    'Android >= 4',
-    'Chrome >= 35',
-    'Firefox >= 31',
-    'Explorer >= 9',
-    'iOS >= 7',
-    'Opera >= 12',
-    'Safari >= 7.1'
-  ],
   DEBUG = true;
 
 module.exports = {
   entry: './src/components/component1/component1.js',
   output: {
-    path: __dirname, //__dirname is a node.js global string that has the path to the root
-    filename: 'compiled/bundle.js'
+    path: path.join(__dirname, 'public') , //__dirname is a node.js global string that has the path to the root
+    filename: 'compiled/bundle.js',
+    publicPath: 'public/',
+    sourcePrefix: '  '
   },
   module: {
     preLoaders: [
@@ -35,6 +28,10 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.(otf|eot|png|svg|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url?limit=8192'
       }
     ]
   },

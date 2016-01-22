@@ -46,46 +46,14 @@ On webpack.config.js replace the following loader
 with
     
     {
-    test: /\.scss$/,
-    loaders: [
-      "css-loader?" + (DEBUG ? "sourceMap&" : "minimize&") +
-      "modules&localIdentName=[name]_[local]_[hash:base64:3]",
-      "postcss-loader"
-     ]
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
     }
-
-also a section postcss was added under modules
-
-    postcss: function plugins(bundler) {
-      return [
-        require("postcss-import")({ addDependencyTo: bundler }),
-        require("precss")(),
-        require("autoprefixer")({ browsers: AUTOPREFIXER_BROWSERS }),
-      ];
-    }
-
-Ok, now what happened here? Lets figure it out, first the old simple css loader was replaced by a chained loader that
-consists of (sorted by execution order):
-
-1. [postcss-loader](https://github.com/postcss/postcss-loader), this enables postcss on webpack
-
-2. [css-loader](https://github.com/webpack/css-loader) Bundles all css together on one file, include source map for chrome
-debugging, enables [css-modules](https://github.com/css-modules/css-modules) and the local identifier is set for easier debugging
-search for _local scope_ [here](https://github.com/webpack/css-loader)
-
-[postcss](https://github.com/postcss/postcss) uses the postcss section under modules, this function should return the desired
-postcss plugins:
-
-- [postcss-import](https://github.com/postcss/postcss-import) plugin allows the usage of _\@import_ on the css file like:  
-    >@import "css/foo.css";
-- [precss](https://github.com/jonathantneal/precss) plugin enables SASS syntax
-- [autoprefixer](https://github.com/postcss/autoprefixer) plugin to parse CSS and add vendor prefixes to CSS 
-rules using values from [Can I Use](http://caniuse.com/). It is recommended by Google and used in Twitter.
 
 Remember we need all those dependencies and save them on the devDependencies on package.json, for that we ran the following
 on the console:
 
-    npm install css-loader postcss-loader postcss-import precss autoprefixer --save-dev
+    npm install sass-loader node-sass webpack --save-dev
 
 
 After this has been added now we are ready to separate our css code for each component, under each component you will 
