@@ -75,12 +75,12 @@ Also we just added a new section on package.json, the script section includes sc
 
     npm run <scriptName>
 
-the _build_ command has been added, so this will be our entry point for the build from now on, this will be useful when
+the _default_ command has been added, so this will be our entry point for the build from now on, this will be useful when
 we start using gulp to build the application, more of that later, also build.sh has been removed.
 
 ##How to Run
 
 Navigate to /v7 and type: 
 
-    npm run build
+    npm run default
     

@@ -29,7 +29,9 @@ static assets representing those modules.
 
 - v6 ESLINT, Also minification, obfuscation, dedupping and aggressive merging (using webpack plugins)
 
-- v7 Separate components on its own directory, add SASS support.
+- v7 Separate components on its own directory, add SASS support, add basic bootstrap css and use _npm run build_ to build.
+
+- v8 Add Gulp build system
 
 ##What is next/missing?
 

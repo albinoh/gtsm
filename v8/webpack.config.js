@@ -1,7 +1,11 @@
 const
   path = require('path'),
   webpack = require('webpack'),
-  DEBUG = true;
+
+  //this parses the command line arguments
+  argv = require('minimist')(process.argv.slice(2)),
+  //if the --release argument is present then some things we will change at build time, look for DEBUG through the code
+  DEBUG = !argv.release;
 
 module.exports = {
   entry: './src/components/component1/component1.js',

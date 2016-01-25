@@ -1,0 +1,6 @@
+{
+  "name": "component1",
+  "description": "entry component",
+  "version": "1.0.0",
+  "main": "./component1.js"
+}
