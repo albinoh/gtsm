@@ -33,9 +33,8 @@ document more about the component. So we will go for the second.
 ## SASS
 
 Since now we are separating the components we can also split the css code, but we will go a step further and add SASS support
-a simple SASS, for this we will be using [postcss](https://github.com/postcss/postcss), PostCSS is a tool for transforming 
-styles with JS plugins. These plugins can lint your CSS, support variables and mixins, transpile future CSS syntax, 
-inline images, and more. Lets review what we did step by step: 
+a simple SASS, for this we will be using [sass-loader](https://github.com/jtangelder/sass-loader). Lets review what we 
+did step by step: 
 
 On webpack.config.js replace the following loader
 
@@ -50,10 +49,10 @@ with
         loaders: ['style', 'css', 'sass']
     }
 
-Remember we need all those dependencies and save them on the devDependencies on package.json, for that we ran the following
-on the console:
+Notice this other syntax, loaders as an array instead of the bang separator, Remember we need all those dependencies 
+and save them on the devDependencies on package.json, for that we ran the following on the console:
 
-    npm install sass-loader node-sass webpack --save-dev
+    npm install sass-loader node-sass --save-dev
 
 
 After this has been added now we are ready to separate our css code for each component, under each component you will 
@@ -65,13 +64,23 @@ Lets also add support for bootstrap css, to do this, lets run:
 
     npm install bootstrap-sass --save-dev
 
-this will add bootstrap sass flavor to our project, then the file /src/style/style.scss has been created and has been
-included on component1.js, this file includes all bootstrap base elements and has some other more complex ready to be
-used if needed (uncomment the required line).
+this will add bootstrap sass flavor to our project, then lets create the file /src/global/style/style.scss and 
+include it on component1.js, this includes a reference to [normalize.css](https://necolas.github.io/normalize.css/) and
+to the base styles needed to use bootstrap css syntax, also there are some references to other bootstrap components but
+these are commented out just because we dont want to bloat our css, so uncomment if needed.
+
+##Run with NPM
+
+Also we just added a new section on package.json, the script section includes scripts that can be ran with 
+
+    npm run <scriptName>
+
+the _build_ command has been added, so this will be our entry point for the build from now on, this will be useful when
+we start using gulp to build the application, more of that later, also build.sh has been removed.
 
 ##How to Run
-Navigate to /v7 and on the console (alternatively you can run _run.sh_):
-    
-    >webpack
 
-just like the others, look at index.html
+Navigate to /v7 and type: 
+
+    npm run build
+    
