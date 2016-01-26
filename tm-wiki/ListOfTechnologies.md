@@ -50,6 +50,12 @@
 | [https://github.com/Ticketmaster/tm-nucleus](https://github.com/Ticketmaster/tm-nucleus) |
 | [https://www.npmjs.com/package/tm-nucleus](https://www.npmjs.com/package/tm-nucleus) |
 
+| Flow(type) |
+|------------|
+| Flow is a static type checker, designed to find type errors in JavaScript programs |
+|[http://flowtype.org/](http://flowtype.org/)|
+
+
 ## Server side
 
 | Maven |
