@@ -2,6 +2,12 @@
 
 ## Client side
 
+| ES6 |
+|-----|
+|ECMAScript 6 is the newest version of the ECMAScript standard. This standard was ratified in June 2015. ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is underway now.|
+|[http://babeljs.io/docs/learn-es2015/](http://babeljs.io/docs/learn-es2015/)|
+
+
 | React    |
 |----------|
 |React is a JavaScript library for creating user interfaces by Facebook and Instagram. Many people choose to think of React as the V in MVC.|
