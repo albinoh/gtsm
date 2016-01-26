@@ -39,10 +39,9 @@ Well, this is just an intro on webpack and how can it be leveraged to package, b
 Of course webpack is just one part of the whole puzzle, but a very important part. A couple of things that are missing
 that can be added on a v6 example (or more):
 
-- Building (and related phases), for this _gulp_ is our choice, gulp will eventually call webpack as one of the build phases
+- Start using react on the sample app and start doing something more complex
 - Flow support
 - Testing, this is a whole subject but webpack can't help here
-- Start using react on the sample app and start doing something more complex
 - Evaluate if server side rendering is needed and what needs to be done to accomplish it, Look at 
 [isomorphic apps](https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/).
 
